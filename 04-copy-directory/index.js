@@ -4,7 +4,7 @@ const path = require('path');
 const { readdir, mkdir, copyFile, unlink } = fs;
 
 const copyDir = () => {
-  // First we create the destination directory
+  // Firstly we create the destination directory
   mkdir(path.join(__dirname, 'files-copy'), { recursive: true }, (err) => {
     if (err) throw err;
   });
